@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 export function AgencyAbout() {
     return (
@@ -42,6 +43,7 @@ export function AgencyAbout() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
+                            className="hidden md:block"
                         >
                             We step in when problems are undefined, briefs are messy, and outcomes actually matter. From shaping ideas to building systems that scale, we don’t just do the work, we make it work.
                         </motion.p>
@@ -50,30 +52,36 @@ export function AgencyAbout() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="pt-4"
+                            className="pt-6"
                         >
-                            <a href="#contact" className="inline-flex items-center gap-2 text-white border-b border-white pb-1 hover:text-zinc-300 transition-colors">
-                                Bring us the mess. We’ll find the method <ArrowDown className="rotate-[-45deg]" size={16} />
-                            </a>
+                            <MagneticButton>
+                                <a href="#contact" className="inline-flex px-8 py-4 bg-white text-black rounded-full font-bold items-center gap-2 hover:bg-zinc-200 transition-colors">
+                                    Bring us the mess <ArrowDown size={20} />
+                                </a>
+                            </MagneticButton>
                         </motion.div>
                     </div>
                 </div>
 
                 {/* Section 2: What We're Made Of */}
-                <div className="grid lg:grid-cols-2 gap-16 mb-40">
-                    <div className="order-2 lg:order-1 space-y-8 text-xl text-zinc-200 font-light leading-relaxed">
+                <div className="grid lg:grid-cols-2 gap-16 mb-40 relative">
+                    {/* Decorative Element */}
+                    <div className="absolute -left-20 top-1/2 w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[80px] pointer-events-none mix-blend-screen" />
+
+                    <div className="order-2 lg:order-1 space-y-8 text-xl text-zinc-200 font-light leading-relaxed relative z-10">
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they meet the browser. No handoffs. No guesswork. No “this looked better in Figma.”
+                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they meet the browser.
                         </motion.p>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
+                            className="hidden md:block"
                         >
                             We believe great digital experiences live at the intersection of instinct and structure. Where aesthetics are backed by systems, and creativity is supported by code. For us, beauty isn’t fragile, it’s engineered.
                         </motion.p>
@@ -82,19 +90,20 @@ export function AgencyAbout() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
+                            className="hidden md:block"
                         >
-                            Our approach is product-design driven: clear goals, scalable frameworks, and interactions that feel intentional, not ornamental. We’re obsessed with performance, and quietly nerdy about micro-interactions, the kind that make a product feel native, responsive, and alive.
+                            Our approach is product-design driven: clear goals, scalable frameworks, and interactions that feel intentional, not ornamental.
                         </motion.p>
 
-                        <motion.div className="pt-8 border-l-2 border-white/20 pl-6 my-8">
-                            <p className="text-2xl text-white font-medium italic">
-                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job. And logic doing the heavy lifting."
+                        <motion.div className="pt-8 border-l-2 border-purple-500/50 pl-6 my-8">
+                            <p className="text-xl md:text-2xl text-white font-medium italic">
+                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job."
                             </p>
                         </motion.div>
 
                     </div>
                     <div className="order-1 lg:order-2">
-                        <span className="text-sm font-mono uppercase tracking-widest text-blue-500 mb-4 block">
+                        <span className="text-sm font-mono uppercase tracking-widest text-purple-500 mb-4 block">
                             Our DNA
                         </span>
                         <motion.h2
@@ -111,8 +120,10 @@ export function AgencyAbout() {
                 </div>
 
                 {/* Section 3: Stats */}
-                <div className="border-y border-white/10 py-16 bg-white/5 relative overflow-hidden rounded-2xl">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50" />
+                <div className="border border-white/10 py-16 bg-white/5 relative overflow-hidden rounded-2xl group hover:border-white/20 transition-colors duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 opacity-50 group-hover:opacity-70 transition-opacity duration-500" />
+                    <div className="absolute -right-20 -bottom-20 w-[300px] h-[300px] bg-pink-600/20 rounded-full blur-[80px] pointer-events-none" />
+
                     <div className="relative z-10 p-8">
                         <span className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-12 block text-center lg:text-left">
                             The Journey
@@ -142,11 +153,13 @@ export function AgencyAbout() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-32 text-center">
-                    <p className="text-zinc-400 mb-6 font-mono uppercase tracking-widest text-sm">Next Step</p>
-                    <a href="mailto:hey.generalists@gmail.com" className="inline-block text-4xl md:text-6xl font-bold hover:text-blue-500 transition-colors border-b-2 border-white/20 hover:border-blue-500 pb-2">
-                        If it matters, let’s do it properly →
-                    </a>
+                <div className="mt-32 text-center flex flex-col items-center">
+                    <p className="text-zinc-400 mb-8 font-mono uppercase tracking-widest text-sm">Next Step</p>
+                    <MagneticButton>
+                        <a href="mailto:hey.generalists@gmail.com" className="inline-flex px-10 py-6 bg-white text-black text-xl md:text-2xl font-bold rounded-full items-center gap-3 hover:bg-zinc-200 transition-colors">
+                            Let’s do it properly <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        </a>
+                    </MagneticButton>
                 </div>
 
             </div>

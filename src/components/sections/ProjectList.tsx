@@ -18,18 +18,21 @@ export function ProjectList() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
-                                className="group relative border-t border-white/10 py-12 md:py-20 cursor-pointer"
+                                className="group relative border-t border-white/10 py-8 md:py-20 cursor-pointer"
                             >
                                 <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 relative z-10 transition-colors duration-300 group-hover:text-zinc-400">
-                                    <h3 className="text-4xl md:text-6xl font-bold tracking-tighter group-hover:translate-x-4 transition-transform duration-500">
+                                    <h3 className="text-3xl md:text-6xl font-bold tracking-tighter group-hover:translate-x-4 transition-transform duration-500">
                                         {project.title}
                                     </h3>
-                                    <div className="flex items-center gap-8">
-                                        <span className="font-mono text-sm uppercase tracking-widest opacity-0 md:opacity-100 transition-opacity">{project.category}</span>
+                                    <div className="flex items-center justify-between md:justify-start gap-8 w-full md:w-auto mt-2 md:mt-0">
+                                        <span className="font-mono text-xs md:text-sm uppercase tracking-widest text-zinc-500 md:text-inherit opacity-100 md:opacity-100 transition-opacity">{project.category}</span>
+                                        <div className="md:hidden text-white/50">
+                                            <ArrowUpRight size={24} />
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <div className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                                     <ArrowUpRight size={32} />
                                 </div>
                             </motion.div>

@@ -53,12 +53,12 @@ export function HeroLando() {
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     {/* Huge Background Text */}
                     {/* Huge Background Text */}
-                    <div className="w-full flex z-20 flex-col items-center justify-center select-none opacity-20 md:opacity-100">
+                    <div className="w-full flex z-20 flex-col items-center justify-center select-none">
                         <motion.span
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, ease: "circOut" }}
-                            className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500 text-center"
+                            className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 text-center"
                         >
                             JACK OF MANY.
                         </motion.span>
@@ -66,7 +66,7 @@ export function HeroLando() {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2, ease: "circOut" }}
-                            className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-zinc-400 to-zinc-600 text-center"
+                            className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 text-center"
                         >
                             MASTER OF OUTCOMES.
                         </motion.span>
