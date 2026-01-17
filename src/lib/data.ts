@@ -53,17 +53,17 @@ export const projects: Project[] = [
         link: "https://holaworldtourism.com"
     },
     {
-        id: "wellspun-living",
-        title: "Wellspun Living",
+        id: "welspun-living",
+        title: "Welspun Living",
         category: "Interior & Lifestyle",
         description: "A lifestyle brand website focusing on home textiles and living solutions.",
         year: "2024",
         role: "Web Developer",
-        client: "Wellspun",
+        client: "Welspun",
         src: "",
         images: [],
         tech: ["WordPress"],
-        link: "https://wellspunliving.com"
+        link: "https://welspunliving.com"
     },
     {
         id: "trac-seals",
