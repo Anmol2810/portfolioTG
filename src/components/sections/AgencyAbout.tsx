@@ -74,7 +74,7 @@ export function AgencyAbout() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they meet the browser.
+                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they hit the browser.
                         </motion.p>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -97,7 +97,7 @@ export function AgencyAbout() {
 
                         <motion.div className="pt-8 border-l-2 border-purple-500/50 pl-6 my-8">
                             <p className="text-xl md:text-2xl text-white font-medium italic">
-                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job."
+                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job."<br /> <span className="text-sm text-zinc-700">-The generalists</span>
                             </p>
                         </motion.div>
 

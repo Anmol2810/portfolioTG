@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-purple-500/30">
       <HeroLando />
-      <ProjectList />
       <AgencyAbout />
       <TechStack />
+      <ProjectList />
       <Contact />
       <Footer />
     </main>

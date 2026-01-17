@@ -16,10 +16,10 @@ export function Contact() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-6xl md:text-8xl font-bold tracking-tighter mb-12"
+                            className="text-4xl text-zinc-500 md:text-6xl font-bold tracking-tighter mb-12"
                         >
-                            Bring us <br />
-                            <span className="text-zinc-500">the mess.</span>
+                            Built fast.<br />Scaled smart.<br />Zero babysitting.<br />
+                            <span className="text-white text-6xl md:text-8xl">Let's Connect</span>
                         </motion.h2>
 
                         <div className="flex flex-col gap-8 mb-12">
