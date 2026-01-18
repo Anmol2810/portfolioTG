@@ -66,7 +66,7 @@ export function HeroLando() {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2, ease: "circOut" }}
-                            className="text-6xl leading-none font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-400 text-center"
+                            className="md:text-6xl text-4xl leading-none font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-400 text-center"
                         >
                             The Generalists
                         </motion.span>
