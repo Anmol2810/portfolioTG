@@ -60,15 +60,15 @@ export function HeroLando() {
                             transition={{ duration: 1, ease: "circOut" }}
                             className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 text-center"
                         >
-                            JACK OF MANY.
+                            DREAM. DESIGN. DEPLOY.
                         </motion.span>
                         <motion.span
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.2, ease: "circOut" }}
-                            className="text-[6vw] leading-none font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 text-center"
+                            className="text-6xl leading-none font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-400 text-center"
                         >
-                            MASTER OF OUTCOMES.
+                            The Generalists
                         </motion.span>
                     </div>
 
@@ -83,7 +83,7 @@ export function HeroLando() {
                     </motion.div>
 
                     {/* Role Text */}
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
@@ -92,7 +92,7 @@ export function HeroLando() {
                         <p className="text-xl md:text-2xl font-mono uppercase tracking-widest text-zinc-300 bg-black/40 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
                             Creative Digitals
                         </p>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
 
                 {/* Bottom Corners */}

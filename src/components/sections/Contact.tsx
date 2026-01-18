@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, ArrowUpRight, MapPin, Clock } from "lucide-react";
+import { Mail, ArrowUpRight, MapPin, Clock, ChartAreaIcon } from "lucide-react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 export function Contact() {
@@ -73,21 +73,21 @@ export function Contact() {
                         viewport={{ once: true }}
                         className="bg-zinc-900/30 p-8 md:p-12 rounded-3xl border border-white/5 backdrop-blur-sm"
                     >
-                        <div className="h-full flex flex-col items-center justify-center text-center space-y-8 py-12">
+                        <div className="h-full flex flex-col items-center justify-center text-center space-y-3 py-12">
                             <h3 className="text-3xl md:text-5xl font-bold tracking-tighter">
-                                Ready to start?
+                                Ready to Dream?
                             </h3>
-                            <p className="text-zinc-400 max-w-md">
-                                Let's build something exceptional together. Reach out to discuss your next project.
+                            <p className="text-zinc-400 text-[21px] max-w-md">
+                                Bring the vision. We'll take it to the world.
                             </p>
-                            <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+                            <div className="flex flex-col md:flex-row gap-4 items-center justify-center mt-5">
                                 <MagneticButton>
                                     <a href="mailto:hey.generalists@gmail.com" className="px-8 py-5 bg-white text-black text-lg font-bold rounded-full hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2 group">
                                         Start a Project <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                     </a>
                                 </MagneticButton>
                                 <MagneticButton>
-                                    <a href="https://wa.me/918826572782" target="_blank" className="px-8 py-5 bg-transparent border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group">
+                                    <a href="https://wa.me/+918826572782" target="_blank" className="px-8 py-5 bg-transparent border border-white/20 text-white text-lg font-bold rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2 group">
                                         WhatsApp <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                     </a>
                                 </MagneticButton>

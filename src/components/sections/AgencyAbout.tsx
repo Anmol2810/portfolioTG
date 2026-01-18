@@ -74,7 +74,7 @@ export function AgencyAbout() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                         >
-                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they hit the browser.
+                            Our roots in both design and engineering mean we don’t just imagine beautiful interfaces, we understand exactly how they’ll behave once they hit the browser. <br /> <span className="text-[16px] font-bold text-purple-400 italic">No handoffs. No guesswork. No “this looked better in Figma”.</span>
                         </motion.p>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -92,12 +92,12 @@ export function AgencyAbout() {
                             transition={{ delay: 0.2 }}
                             className="hidden md:block"
                         >
-                            Our approach is product-design driven: clear goals, scalable frameworks, and interactions that feel intentional, not ornamental.
+                            We’re obsessed with performance, and quietly nerdy about micro-interactions, the kind that make a product feel native, responsive, and alive.
                         </motion.p>
 
                         <motion.div className="pt-8 border-l-2 border-purple-500/50 pl-6 my-8">
                             <p className="text-xl md:text-2xl text-white font-medium italic">
-                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job."<br /> <span className="text-sm text-zinc-700">-The generalists</span>
+                                "If something feels smooth, fast, and effortless, that’s not luck. That’s design doing its job."<br /> <span className="text-md font-normal text-zinc-600">-The Generalists</span>
                             </p>
                         </motion.div>
 
@@ -130,10 +130,10 @@ export function AgencyAbout() {
                         </span>
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                             {[
-                                { label: "Certifications", value: "6+", sub: "And still not done..." },
-                                { label: "Projects Delivered", value: "25+", sub: "And still obsessed..." },
-                                { label: "Years Experience", value: "5+", sub: "And still evolving..." },
-                                { label: "Mugs of Caffeine", value: "7000+", sub: "And still counting..." },
+                                { label: "Years Experience", value: "5+", sub: "and still evolving..." },
+                                { label: "Certifications", value: "6+", sub: "and still not done..." },
+                                { label: "Projects Delivered", value: "25+", sub: "and still obsessed..." },
+                                { label: "Mugs of Caffeine", value: "7000+", sub: "and still counting..." },
                             ].map((stat, i) => (
                                 <motion.div
                                     key={i}
@@ -154,7 +154,7 @@ export function AgencyAbout() {
 
                 {/* CTA */}
                 <div className="mt-32 text-center flex flex-col items-center">
-                    <p className="text-zinc-400 mb-8 font-mono uppercase tracking-widest text-sm">Next Step</p>
+                    <p className="text-blue-500 mb-4 font-mono uppercase tracking-widest text-sm">If it matters,</p>
                     <MagneticButton>
                         <a href="mailto:hey.generalists@gmail.com" className="inline-flex px-10 py-6 bg-white text-black text-xl md:text-2xl font-bold rounded-full items-center gap-3 hover:bg-zinc-200 transition-colors">
                             Let’s do it properly <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

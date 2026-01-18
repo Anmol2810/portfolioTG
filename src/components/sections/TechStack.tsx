@@ -26,7 +26,7 @@ const marqueeItems = [...technologies, ...technologies];
 export function TechStack() {
     return (
         <section className="py-24 bg-black border-y border-white/5 overflow-hidden">
-            <div className="container mx-auto px-4 mb-12">
+            <div className="container ml-5 mb-18">
                 <h2 className="text-sm font-mono uppercase tracking-widest text-zinc-500">
                     Technologies & Tools
                 </h2>
@@ -45,6 +45,29 @@ export function TechStack() {
                 >
                     {marqueeItems.map((tech, i) => (
                         <div key={i} className="flex items-center gap-4 group cursor-default">
+                            <div className="text-zinc-600 group-hover:text-white transition-colors">
+                                <tech.Icon className="w-8 h-8 md:w-12 md:h-12" />
+                            </div>
+                            <span className="text-2xl md:text-4xl font-bold tracking-tighter text-zinc-600 group-hover:text-white transition-colors">
+                                {tech.name}
+                            </span>
+                        </div>
+                    ))}
+                </motion.div>
+            </div>
+            <div className="flex">
+                <motion.div
+                    initial={{ x: "-50%" }}
+                    animate={{ x: 0 }}
+                    transition={{
+                        duration: 80, // Slower duration for readability of logos
+                        ease: "linear",
+                        repeat: Infinity
+                    }}
+                    className="flex gap-16 md:gap-32 whitespace-nowrap pr-16 md:pr-32 mt-15"
+                >
+                    {marqueeItems.map((tech, p) => (
+                        <div key={p} className="flex items-center gap-4 group cursor-default">
                             <div className="text-zinc-600 group-hover:text-white transition-colors">
                                 <tech.Icon className="w-8 h-8 md:w-12 md:h-12" />
                             </div>

@@ -9,7 +9,7 @@ export function ProjectList() {
     return (
         <section id="projects" className="bg-zinc-950 py-32 px-4">
             <div className="container mx-auto max-w-6xl">
-                <h2 className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-12">Selected Works</h2>
+                <h2 className="text-sm font-mono uppercase tracking-widest text-purple-500 font-medium mb-12">Selected Works</h2>
 
                 <div className="flex flex-col">
                     {projects.slice(0, 4).map((project, index) => (

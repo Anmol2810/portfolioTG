@@ -32,7 +32,7 @@ export function Navigation() {
                             The Generalists
                         </span>
                         <span className="absolute top-0 left-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[0.76,0,0.24,1]">
-                            Creative लोग
+                            Creative Minds
                         </span>
                     </Link>
 
