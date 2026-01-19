@@ -61,7 +61,7 @@ export const projects: Project[] = [
         role: "Web Developer",
         client: "Welspun",
         src: "",
-        images: [],
+        images: ["/images/well1.png", "/images/well2.png", "/images/well3.png"],
         tech: ["WordPress"],
         link: "https://welspunliving.com"
     },
@@ -82,7 +82,7 @@ export const projects: Project[] = [
         id: "kayafit",
         title: "Kayafit",
         category: "Fitness & Wellness",
-        description: "A comprehensive fitness platform offering workout plans and wellness resources.",
+        description: "A comprehensive fitness platform offering workout plans and wellness resources. (⚠️WIP)",
         year: "2024",
         role: "Web Designer/Developer",
         client: "Kayafit",
@@ -116,5 +116,57 @@ export const projects: Project[] = [
         images: [],
         tech: ["WordPress", "Elementor"],
         link: "https://sparrowi.com"
+    },
+    {
+        id: "welspun-energy",
+        title: "Welspun Energy",
+        category: "Energy / Corporate",
+        description: "Corporate website for a leading energy company, highlighting sustainable solutions and innovations.",
+        year: "2024",
+        role: "Web Developer",
+        client: "Welspun Energy",
+        src: "/images/welspunlogo.png",
+        images: ["/images/wele1.png", "/images/wele2.png", "/images/wele3.png"],
+        tech: ["WordPress", "Elementor"],
+        link: "https://welspunnewenergy.com/"
+    },
+    {
+        id: "prima-infotek",
+        title: "Prima Infotek",
+        category: "IT Services",
+        description: "A professional web presence for an IT solutions provider, built for speed and reliability.",
+        year: "2024",
+        role: "Frontend Developer",
+        client: "Prima Infotek",
+        src: "/images/primalogo.png",
+        images: ["/images/prima1.png", "/images/prima2.png", "/images/prima3.png"],
+        tech: ["Vue.js", "Hostinger Page Builder"],
+        link: "https://primainfotek.com/"
+    },
+    {
+        id: "galaxy-consulting",
+        title: "Galaxy Consulting Canada",
+        category: "Consulting",
+        description: "A clean, informative platform for a Canadian business consulting firm.",
+        year: "2024",
+        role: "Web Developer",
+        client: "Galaxy Consulting",
+        src: "",
+        images: [],
+        tech: ["JavaScript", "CSS", "SMTP"],
+        link: "https://galaxyconsultinginc.ca/"
+    },
+    {
+        id: "webplorax",
+        title: "Webplorax",
+        category: "Digital Services",
+        description: "Website for a digital services provider, focusing on clarity and service showcasing.",
+        year: "2024",
+        role: "Web Developer",
+        client: "Webplorax",
+        src: "/images/wplogo.png",
+        images: ["/images/wpx.png", "/images/wpx1.png", "/images/wpx2.png", "/images/wpx3.png"],
+        tech: ["JavaScript", "CSS", "SMTP"],
+        link: "https://webplorax.com/"
     }
 ];

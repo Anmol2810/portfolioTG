@@ -58,13 +58,18 @@ export function Contact() {
                         </div>
 
                         <div className="flex gap-4">
-                            {["Twitter", "LinkedIn", "Instagram", "GitHub"].map((social) => (
-                                <a key={social} href="#" className="text-zinc-500 hover:text-white uppercase tracking-widest text-xs font-mono border-b border-transparent hover:border-white transition-all pb-0.5">
-                                    {social}
+                            {[
+                                { name: "Behance", url: "https://www.behance.net/the_generalists" },
+                                { name: "Instagram", url: "#" },
+                                { name: "GitHub", url: "https://github.com/Anmol2810" }
+                            ].map((social) => (
+                                <a key={social.name} href={social.url} target={social.url.startsWith("http") ? "_blank" : "_self"} className="text-zinc-500 hover:text-white uppercase tracking-widest text-xs font-mono border-b border-transparent hover:border-white transition-all pb-0.5">
+                                    {social.name}
                                 </a>
                             ))}
                         </div>
                     </div>
+
 
                     {/* Right Column: Visual Form */}
                     <motion.div
@@ -99,6 +104,6 @@ export function Contact() {
             </div>
             {/* Background Decorative */}
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full -z-10 translate-y-1/2 translate-x-1/2" />
-        </section>
+        </section >
     );
 }
